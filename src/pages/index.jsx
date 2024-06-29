@@ -19,7 +19,9 @@ document.querySelector('#root').innerHTML = render(
   </div>,
 );
 
-const navBtn = document.querySelector('#nav-btn');
+const navBtn = document.querySelector('.nav-btn');
+const navbar = document.querySelector('.rollout-nav');
+
 navBtn.addEventListener('click', () => {
   navbar.classList.toggle('nav-closed');
 });
