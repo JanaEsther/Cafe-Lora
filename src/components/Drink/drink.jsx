@@ -1,19 +1,19 @@
 import './drink.css';
 
-const Drink = (props) => {
-  const drinkElm = document.createElement('div');
-  drinkElm.classList.add('drink');
-  drinkElm.innerHTML = `
-    <div class="drink__product">
-      <div class="drink__cup">
-        <img src="/assets/cups/${props.id}.png" />
+export const Drink = ({ id, name, ordered, image, layers }) => {
+  return (
+    <div className="drink">
+      <div className="drink__product">
+        <div className="drink__cup">
+          <img src={image} alt={`${name}`} />
+        </div>
+        <div className="drink__info">
+          <h3>{name}</h3>
+        </div>
       </div>
-      <div class="drink__info">
-        <h3>${props.name}</h3>
-      </div>
+      <form className="drink__controls">
+        <button className="order-btn">Objednat</button>
+      </form>
     </div>
-    <div class="drink__controls">
-      <button class="order-btn">Objednat</button>
-    </div>
-`;
+  );
 };
