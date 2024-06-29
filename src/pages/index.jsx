@@ -18,3 +18,16 @@ document.querySelector('#root').innerHTML = render(
     </main>
   </div>,
 );
+
+const navBtn = document.querySelector('#nav-btn');
+navBtn.addEventListener('click', () => {
+  navbar.classList.toggle('nav-closed');
+});
+
+const navItems = navbar.querySelectorAll('a');
+
+navItems.forEach((navItem) => {
+  navItem.addEventListener('click', () => {
+    navbar.classList.add('nav-closed');
+  });
+});
