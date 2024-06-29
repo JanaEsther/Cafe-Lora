@@ -1,3 +1,4 @@
+import { Layer } from '../Layer/layer';
 import './drink.css';
 
 export const Drink = ({ id, name, ordered, image, layers }) => {
@@ -9,6 +10,7 @@ export const Drink = ({ id, name, ordered, image, layers }) => {
         </div>
         <div className="drink__info">
           <h3>{name}</h3>
+          <Layer />
         </div>
       </div>
       <form className="drink__controls">
