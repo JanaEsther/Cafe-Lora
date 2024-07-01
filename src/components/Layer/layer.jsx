@@ -1,13 +1,10 @@
-import './layer.css'
+import './layer.css';
 
-export const Layer = ({}) =>{
-  return(
-  <div className="layer">
-    <div className="layer__color">
-    <div className="layer__label">
-
+export const Layer = ({ label, color }) => {
+  return (
+    <div className="layer">
+      <div className="layer__color" style={{ backgroundColor: color }} />
+      <div className="layer__label">{label}</div>
     </div>
-    </div>
-  </div>
   );
 };
