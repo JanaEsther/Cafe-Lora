@@ -11,12 +11,14 @@ export const Drink = ({ id, name, ordered, image, layers }) => {
         <div className="drink__info">
           <h3>{name}</h3>
           {layers.map((layer) => (
-            <Layer label={layer.label} color={layer.color} />
+            <Layer key={layer.label} label={layer.label} color={layer.color} />
           ))}
         </div>
       </div>
-      <form className="drink__controls">
-        <button className="order-btn">Objednat</button>
+      <form className="drink__controls" data-ordered={ordered} data-id={id}>
+        <button className="order-btn order-btn--ordered">
+          {ordered ? 'Zrušit' : 'Objednat'}
+        </button>
       </form>
     </div>
   );

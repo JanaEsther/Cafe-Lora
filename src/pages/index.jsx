@@ -52,3 +52,30 @@ navItems.forEach((navItem) => {
     navbar.classList.add('nav-closed');
   });
 });
+
+//Přidání posluchače událostí na každý objednávací formulář v nápojích
+
+const drinkForms = document.querySelectorAll('.drink__controls');
+
+drinkForms.forEach((form) => {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const isOrdered = form.dataset.ordered === 'true';
+    const drinkId = form.dataset.id;
+    console.log(`Drink ID:${drinkId}`);
+
+    const response = await fetch(
+      `http://localhost:4000/api/drinks/${drinkId}`,
+      {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify([
+          { op: 'replace', path: '/ordered', value: !isOrdered },
+        ]),
+      },
+    );
+    window.location.reload();
+  });
+});
