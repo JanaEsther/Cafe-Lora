@@ -10,7 +10,6 @@ document.querySelector('#root').innerHTML = render(
       <header>
         <div className="container header__content">
           <div className="site-logo"></div>
-
           <nav className="inline-nav">
             <a href="/">Hlavní stránka</a>
           </nav>
