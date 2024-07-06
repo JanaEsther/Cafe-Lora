@@ -5,7 +5,7 @@ export const Gallery = () => {
     <section className="gallery" id="gallery">
       <div className="container">
         <div className="gallery__content">
-          <h2>Nově otevřeno!</h2>
+          <h2 className="gallery__title">Nově otevřeno!</h2>
           <div className="gallery__cols">
             <p className="gallery__col">
               Máte chuť na trochu nostalgie? Rádi vás u nás uvidíme. Atmosféra

@@ -4,6 +4,7 @@ import { Banner } from '../components/Banner/banner';
 import { Menu } from '../components/Menu/menu';
 import { Gallery } from '../components/Gallery/gallery';
 import { Contact } from '../components/Contact/contact';
+import { Footer } from '../components/Footer/footer';
 import '../global.css';
 import './index.css';
 
@@ -34,6 +35,7 @@ document.querySelector('#root').innerHTML = render(
       <Menu drinks={drinkMenu} />
       <Gallery />
       <Contact />
+      <Footer />
     </main>
   </div>,
 );

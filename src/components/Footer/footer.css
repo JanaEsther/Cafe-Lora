@@ -4,9 +4,14 @@ footer {
   background-color: #301a1a;
 }
 
+.footer__text {
+  text-align: center;
+}
+
 .footer__content {
   max-width: 25rem;
   margin: 0 auto;
   font-size: small;
   text-align: center;
+  padding-bottom: 20px;
 }

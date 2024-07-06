@@ -27,6 +27,10 @@
   flex: 1;
 }
 
+.gallery__title {
+  color: gold;
+}
+
 @media (min-width: 768px) {
   .gallery__cols {
     flex-direction: row;

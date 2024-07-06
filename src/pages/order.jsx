@@ -13,33 +13,22 @@ document.querySelector('#root').innerHTML = render(
           <nav className="inline-nav">
             <a href="/">Hlavní stránka</a>
           </nav>
-
         </div>
       </header>
 
       <main className="order">
         <div className="container order__content">
-          <h1>Vaše objedávnka</h1>
+          <h1>Vaše objednávka</h1>
           <p className="empty-order">Zatím nemáte nic objednáno</p>
           <div className="order__items">
             <div className="order-item">
-              <img
-                src="/cups/espresso.png"
-                className="order-item__image"
-              />
-              <div className="order-item__name">
-                Espresso
-              </div>
+              <img src="/cups/espresso.png" className="order-item__image" />
+              <div className="order-item__name">Espresso</div>
             </div>
 
             <div className="order-item">
-              <img
-                src="/cups/doppio.png"
-                className="order-item__image"
-              />
-              <div className="order-item__name">
-                Doppio
-              </div>
+              <img src="/cups/doppio.png" className="order-item__image" />
+              <div className="order-item__name">Doppio</div>
             </div>
           </div>
         </div>
@@ -53,5 +42,5 @@ document.querySelector('#root').innerHTML = render(
         </div>
       </footer>
     </div>
-  </div>
+  </div>,
 );
