@@ -24,14 +24,16 @@ header {
 }
 
 nav a {
-  border-bottom: 1px solid transparent;
+  border-bottom: none;
   text-decoration: none;
   text-transform: uppercase;
   margin: 1rem;
 }
 
 nav a:hover {
-  border-bottom: 1px solid white;
+  color: gold;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .rollout-nav {
@@ -47,6 +49,7 @@ nav a:hover {
 
 .inline-nav a {
   display: inline-block;
+  text-decoration: none;
 }
 
 .nav-closed {
