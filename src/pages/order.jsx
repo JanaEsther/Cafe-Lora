@@ -1,4 +1,5 @@
 import { render } from '@czechitas/render';
+import { Footer } from '../components/Footer/footer';
 import '../global.css';
 import './index.css';
 import './order.css';
@@ -33,14 +34,7 @@ document.querySelector('#root').innerHTML = render(
           </div>
         </div>
       </main>
-
-      <footer>
-        <div className="container">
-          <div className="footer__content">
-            Café Lóra je tréningový projekt v rámci Czechitas kurzu JavaScript 2
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   </div>,
 );

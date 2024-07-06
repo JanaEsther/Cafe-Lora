@@ -5,7 +5,7 @@ export const Footer = () => {
     <div className="container">
       <p className="footer__text">© 2024 Café Lora s.r.o. </p>
       <div className="footer__content">
-        Café Lóra je tréningový projekt v rámci Czechitas kurzu JavaScript 2
+        Café Lóra je tréningový projekt v rámci Czechitas kurzu JavaScript 2.
       </div>
     </div>
   );
