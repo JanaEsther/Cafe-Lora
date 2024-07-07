@@ -31,8 +31,11 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 1px solid white;
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 
 .rollout-nav {
   width: 10rem;
@@ -170,6 +173,12 @@ footer {
   box-shadow: 0 0 3px #444;
 }
 
+.order-detail a:hover {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Menu - Drink */
 .drink {
   width: 20rem;
@@ -216,6 +225,8 @@ footer {
 
 .order-btn:hover {
   transform: scale(1.1);
+  background-color: #ea946f;
+  font-weight: bold;
 }
 
 .order-btn:focus {

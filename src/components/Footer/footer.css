@@ -1,6 +1,6 @@
 /* Footer */
 footer {
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: #301a1a;
 }
 
@@ -9,9 +9,9 @@ footer {
 }
 
 .footer__content {
-  max-width: 25rem;
+  max-width: 5rem;
   margin: 0 auto;
   font-size: small;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
