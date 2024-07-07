@@ -1,4 +1,5 @@
 import { render } from '@czechitas/render';
+import { Header } from '../components/Header/header';
 import { Footer } from '../components/Footer/footer';
 import '../global.css';
 import './index.css';
@@ -7,14 +8,7 @@ import './order.css';
 document.querySelector('#root').innerHTML = render(
   <div className="page">
     <div className="page">
-      <header>
-        <div className="container header__content">
-          <div className="site-logo"></div>
-          <nav className="inline-nav">
-            <a href="/">Hlavní stránka</a>
-          </nav>
-        </div>
-      </header>
+      <Header showMenu={false} />
 
       <main className="order">
         <div className="container order__content">
