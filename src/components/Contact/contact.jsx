@@ -1,4 +1,5 @@
 import './contact.css';
+import mapImg from '../../pages/img/map.png';
 
 export const Contact = () => {
   return (
@@ -37,7 +38,7 @@ export const Contact = () => {
               <td>9:00 - 02:00</td>
             </tr>
           </table>
-          <img className="contact__map" src="./img/map.png" />
+          <img className="contact__map" src={mapImg} />
         </div>
       </div>
     </section>
